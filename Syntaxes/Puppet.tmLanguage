@@ -22,9 +22,25 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*/\*</string>
+			<string>^\s*(/\*)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.begin.roole</string>
+				</dict>
+			</dict>
 			<key>end</key>
 			<string>\*/</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.end.roole</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>comment.block.puppet</string>
 		</dict>
@@ -296,8 +312,16 @@
 		</dict>
 		<key>escaped_char</key>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.constant.roole</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>\\.</string>
+			<string>(\\).</string>
 			<key>name</key>
 			<string>constant.character.escape.puppet</string>
 		</dict>
@@ -344,16 +368,24 @@
 		<dict>
 			<key>begin</key>
 			<string>\{</string>
-			<key>captures</key>
+			<key>beginCaptures</key>
 			<dict>
-				<key>1</key>
+				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.puppet</string>
+					<string>punctuation.section.scope.begin.puppet</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>\}</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.end.puppet</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -370,16 +402,24 @@
 		<dict>
 			<key>begin</key>
 			<string>\{</string>
-			<key>captures</key>
+			<key>beginCaptures</key>
 			<dict>
-				<key>1</key>
+				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.puppet</string>
+					<string>punctuation.section.scope.begin.puppet</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>\}</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.end.puppet</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -400,16 +440,24 @@
 		<dict>
 			<key>begin</key>
 			<string>\[</string>
-			<key>captures</key>
+			<key>beginCaptures</key>
 			<dict>
-				<key>1</key>
+				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.puppet</string>
+					<string>punctuation.section.scope.begin.puppet</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>\]</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.end.puppet</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -426,16 +474,24 @@
 		<dict>
 			<key>begin</key>
 			<string>\[</string>
-			<key>captures</key>
+			<key>beginCaptures</key>
 			<dict>
-				<key>1</key>
+				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.puppet</string>
+					<string>punctuation.section.scope.begin.puppet</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>\]</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.end.puppet</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -456,16 +512,24 @@
 		<dict>
 			<key>begin</key>
 			<string>\(</string>
-			<key>captures</key>
+			<key>beginCaptures</key>
 			<dict>
-				<key>1</key>
+				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.puppet</string>
+					<string>punctuation.section.scope.begin.puppet</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>\)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.end.puppet</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -482,16 +546,24 @@
 		<dict>
 			<key>begin</key>
 			<string>\(</string>
-			<key>captures</key>
+			<key>beginCaptures</key>
 			<dict>
-				<key>1</key>
+				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.puppet</string>
+					<string>punctuation.section.scope.begin.puppet</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>\)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.end.puppet</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -532,10 +604,10 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(\[)</string>
+					<string>\[</string>
 					<key>beginCaptures</key>
 					<dict>
-						<key>1</key>
+						<key>0</key>
 						<dict>
 							<key>name</key>
 							<string>punctuation.definition.array.begin.puppet</string>
