@@ -11,7 +11,7 @@
 		<key>decreaseIndentPattern</key>
 		<string>^(.*\*/)?\s*\}[;\s]*$</string>
 		<key>increaseIndentPattern</key>
-		<string>^.*(\{[^}"']*|["']\w+["']:)$</string>
+		<string>^.*(\{[^}"']*|["'][\w/.]+["']:)$</string>
 		<key>unIndentedLinePattern</key>
 		<string>^\s*((/\*|\*/|#).*)?$</string>
 	</dict>
