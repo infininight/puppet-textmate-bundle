@@ -7,7 +7,7 @@
 	<key>command</key>
 	<string>#!/bin/bash
 CUSTOM='--no-80chars-check --no-double_quoted_strings-check --no-trailing_whitespace-check'
-puppet-lint $CUSTOM $TM_FILEPATH
+puppet-lint $CUSTOM "$TM_FILEPATH"
 </string>
 	<key>input</key>
 	<string>document</string>
