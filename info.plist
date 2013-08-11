@@ -4,11 +4,14 @@
 <dict>
 	<key>mainMenu</key>
 	<dict>
+		<key>excludedItems</key>
+		<array>
+			<string>742198AD-F28F-4859-A821-9E8A16CE6809</string>
+		</array>
 		<key>items</key>
 		<array>
 			<string>1DBD7B78-91F3-4528-9AC9-B71D9E5FE445</string>
 			<string>4C5EF528-33E5-448A-B7CB-CD0858FA1FD6</string>
-			<string>742198AD-F28F-4859-A821-9E8A16CE6809</string>
 			<string>------------------------------------</string>
 			<string>42E71A18-D2BA-43D7-9241-019E91F90A2C</string>
 			<string>4C76CA5D-F7F7-4354-AAAD-1F8B00D73823</string>
