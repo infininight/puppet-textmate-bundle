@@ -8,7 +8,7 @@
 	<string>#!/usr/bin/env ruby
 require ENV['TM_SUPPORT_PATH'] + '/lib/textmate'
 puts "&lt;p&gt;Running syntax check&amp;hellip;&lt;/p&gt;\n"
-result = `puppet parser validate --color=html --confdir=/tmp/puppet --vardir=/tmp/puppet "$TM_FILEPATH"`
+result = `"$TM_PUPPET" parser validate --color=html --confdir=/tmp/puppet --vardir=/tmp/puppet "$TM_FILEPATH"`
 puts "&lt;pre&gt;"
 puts result
 puts "&lt;/pre&gt;"
@@ -24,6 +24,21 @@ TextMate.go_to :line =&gt; $1 if result =~ /:(\d+)$/</string>
 	<string>showAsHTML</string>
 	<key>scope</key>
 	<string>source.puppet</string>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>puppet</string>
+			<key>locations</key>
+			<array>
+				<string>/opt/local/bin/puppet</string>
+				<string>/usr/local/bin/puppet</string>
+				<string>/usr/bin/puppet</string>
+			</array>
+			<key>variable</key>
+			<string>TM_PUPPET</string>
+		</dict>
+	</array>
 	<key>uuid</key>
 	<string>1DBD7B78-91F3-4528-9AC9-B71D9E5FE445</string>
 </dict>

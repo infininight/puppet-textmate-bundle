@@ -39,7 +39,7 @@ FORMAT="
 &lt;/tr&gt;"
 
 for F in $FILES; do
-	puppet-lint $CUSTOM --log-format "$FORMAT" $F
+	"$TM_PUPPET_LINT" $CUSTOM --log-format "$FORMAT" $F
 done
 
 cat &lt;&lt;EOF
@@ -57,6 +57,21 @@ EOF
 	<string>showAsHTML</string>
 	<key>scope</key>
 	<string>source.puppet</string>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>puppet-lint</string>
+			<key>locations</key>
+			<array>
+				<string>/opt/local/bin/puppet-lint</string>
+				<string>/usr/local/bin/puppet-lint</string>
+				<string>/usr/bin/puppet-lint</string>
+			</array>
+			<key>variable</key>
+			<string>TM_PUPPET_LINT</string>
+		</dict>
+	</array>
 	<key>uuid</key>
 	<string>4C5EF528-33E5-448A-B7CB-CD0858FA1FD6</string>
 </dict>

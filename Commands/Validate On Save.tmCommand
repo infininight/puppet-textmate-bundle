@@ -7,7 +7,7 @@
 	<key>command</key>
 	<string>#!/bin/bash
 CUSTOM='--no-80chars-check --no-double_quoted_strings-check --no-trailing_whitespace-check'
-puppet-lint $CUSTOM "$TM_FILEPATH"
+"$TM_PUPPET_LINT" $CUSTOM "$TM_FILEPATH"
 true
 </string>
 	<key>input</key>
@@ -22,6 +22,21 @@ true
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>toolTip</string>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>puppet-lint</string>
+			<key>locations</key>
+			<array>
+				<string>/opt/local/bin/puppet-lint</string>
+				<string>/usr/local/bin/puppet-lint</string>
+				<string>/usr/bin/puppet-lint</string>
+			</array>
+			<key>variable</key>
+			<string>TM_PUPPET_LINT</string>
+		</dict>
+	</array>
 	<key>scope</key>
 	<string>source.puppet</string>
 	<key>semanticClass</key>
