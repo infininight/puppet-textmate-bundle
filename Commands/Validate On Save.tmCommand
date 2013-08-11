@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
-	<string>saveActiveFile</string>
+	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/bash
 CUSTOM='--no-80chars-check --no-double_quoted_strings-check --no-trailing_whitespace-check'
@@ -12,15 +12,23 @@ true
 </string>
 	<key>input</key>
 	<string>document</string>
-	<key>keyEquivalent</key>
-	<string>@s</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>name</key>
 	<string>Validate On Save</string>
-	<key>output</key>
-	<string>showAsTooltip</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>source.puppet</string>
+	<key>semanticClass</key>
+	<string>callback.document.did-save</string>
 	<key>uuid</key>
 	<string>742198AD-F28F-4859-A821-9E8A16CE6809</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
