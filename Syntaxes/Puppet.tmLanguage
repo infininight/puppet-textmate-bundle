@@ -301,8 +301,18 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>include</key>
-					<string>#escaped_char</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.constant.roole</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(\\)[$"'\\nrts]</string>
+					<key>name</key>
+					<string>constant.character.escape.puppet</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -666,8 +676,18 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>include</key>
-					<string>#escaped_char</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.constant.roole</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(\\)[\\']</string>
+					<key>name</key>
+					<string>constant.character.escape.puppet</string>
 				</dict>
 			</array>
 		</dict>
