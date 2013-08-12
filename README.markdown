@@ -8,8 +8,8 @@ TextMate 2 is Open Source and available from (http://github.com/textmate/textmat
 (It may work for Sublime Edit 2)
 
 ## Install
-To install, clone this repository and drag the puppet-textmate.tmbundle directory
-on the TextMate icon. The installation will then be automatic.
+
+You can install this bundle in TextMate by opening the preferences and going to the bundles tab. After installation it will be automatically updated for you.
 
 ## Overview
 ###This bundle directly supports :
@@ -24,6 +24,8 @@ on the TextMate icon. The installation will then be automatic.
 To use last two features you need to have puppet-lint installed, on the command-line. To install it, type on your terminal:
 
     sudo gem install puppet-lint puppet
+
+`Validate on Save` is disabled by default, you can enable it by opening the Bundle Editor (Bundles → Edit Bundles…) and going to `Other Actions` in the Puppet bundle and clicking the `Enable this item` checkbox.
 
 
 #### Other standard textmate functions that are handy for writing puppet code:
